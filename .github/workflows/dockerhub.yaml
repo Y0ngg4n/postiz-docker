@@ -23,7 +23,7 @@ jobs:
       - name: Get Dockerfile
         run: |
           git clone https://github.com/scarpentier/postiz-app
-          sed -i 's/infosec\.exchange/todon.eu/' ./postiz.app/libraries/nestjs-libraries/src/integrations/social/mastodon.provider.ts
+          sed -i 's/infosec\.exchange/todon.eu/' ./postiz-app/libraries/nestjs-libraries/src/integrations/social/mastodon.provider.ts
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
